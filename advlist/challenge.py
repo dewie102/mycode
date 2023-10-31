@@ -8,7 +8,7 @@ def main():
 
     wordbank.append(4)
 
-    max_number = 10
+    max_number = len(tlgstudents)
 
     num_str = input(f"Please enter a number from 1 to {max_number}: ")
 
