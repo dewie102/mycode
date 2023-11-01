@@ -1,0 +1,20 @@
+{
+    "full_name": "Shigeru Miyamoto",
+    "age": 70,
+    "employer": "Nintendo",
+    "title": "Representative Director",
+    "occupations": [
+        "Game Designer", 
+        "Game Producer", 
+        "Game Director"
+        ],
+    "notable_games": [
+        "Mario", 
+        "Donkey Kong", 
+        "The Legend Of Zelda", 
+        "F-Zero", 
+        "Star Fox", 
+        "Pikmin", 
+        "Nintendogs"
+        ]
+}
