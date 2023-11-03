@@ -33,3 +33,27 @@ class Cheat_Loaded_Dice(Player): # inheritance of Player
                 self.dice[i] += 1
             i += 1
 
+class Cheat_Mulligan(Player):
+    def cheat(self):
+        total = sum(self.get_dice())
+        print(f"Original total: {total}")
+        while total < 9:
+            self.roll()
+            total = sum(self.get_dice())
+            print(f"New total: {total}")
+
+class Cheat_Additional_Die(Player):
+    def cheat(self):
+        self.dice.append(randint(1,6))
+
+class Cheat_Weighted_Dice(Player):
+    def cheat(self):
+        while self.dice[0] < 3:
+            self.dice[0] = randint(1,6)
+
+class Cheat_Sabotage(Player):
+    def cheat(self, target):
+        while sum(target.get_dice()) > 9:
+            target.roll()
+
+
